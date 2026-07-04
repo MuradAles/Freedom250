@@ -25,3 +25,11 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
