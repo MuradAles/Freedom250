@@ -1,0 +1,61 @@
+borrower_id,program,loan_amount,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,label,label_reason
+B001,PPP,85000,2021-03-05,12400.00,payroll,ADP Payroll,gross wages for covered pay period,false,payroll_report,0.05,allowed,Payroll is generally eligible PPP use
+B001,PPP,85000,2021-03-08,3100.00,health_benefits,BlueShield,employee health insurance premium,false,invoice_and_bank_statement,0.08,allowed,Employer health benefit cost with documentation
+B001,PPP,85000,2021-03-10,4200.00,rent,Main Street Properties,monthly business rent,false,lease_and_canceled_check,0.07,allowed,Business rent with documentation
+B001,PPP,85000,2021-03-12,760.00,utilities,City Electric,business electricity bill,false,utility_invoice,0.04,allowed,Business utility expense
+B001,PPP,85000,2021-03-19,11850.00,payroll,ADP Payroll,gross wages for covered pay period,false,payroll_report,0.05,allowed,Payroll aligns with covered period
+B002,PPP,120000,2021-04-02,18000.00,owner_draw,Owner Transfer,transfer to owner's personal checking,true,bank_statement_only,0.92,inappropriate,Owner draw unrelated to payroll documentation
+B002,PPP,120000,2021-04-09,9500.00,vehicle,Luxury Auto Group,down payment on personal SUV,true,receipt,0.96,inappropriate,Personal vehicle purchase
+B002,PPP,120000,2021-04-14,2200.00,travel,Oceanfront Resort,weekend resort stay,true,credit_card_statement,0.95,inappropriate,Personal travel or lodging
+B002,PPP,120000,2021-04-22,4800.00,jewelry,Diamond Gallery,watch purchase,true,receipt,0.98,inappropriate,Personal luxury purchase
+B003,EIDL,150000,2021-06-01,6700.00,rent,Warehouse Leasing LLC,warehouse lease payment,false,lease_and_bank_statement,0.09,allowed,Normal operating expense
+B003,EIDL,150000,2021-06-05,1800.00,utilities,Metro Gas,business gas utility,false,invoice,0.08,allowed,Normal utility expense
+B003,EIDL,150000,2021-06-12,5400.00,inventory,Restaurant Supply Co,replacement food inventory,false,invoice_and_receipt,0.12,allowed,Working capital for normal operations
+B003,EIDL,150000,2021-06-19,3200.00,accounts_payable,Food Distributor Inc,past-due supplier invoice,false,invoice_and_check,0.14,allowed,Ordinary payable tied to operations
+B004,EIDL,200000,2021-07-03,42000.00,real_estate,BuildRight Contractors,new patio expansion,false,contract_invoice,0.88,inappropriate,Expansion or fixed improvement is not normal working capital
+B004,EIDL,200000,2021-07-10,25000.00,owner_bonus,Owner Payroll,special owner bonus,true,payroll_stub,0.91,inappropriate,Bonus or distribution to owner
+B004,EIDL,200000,2021-07-18,13000.00,debt_refinance,Regional Bank,payoff old business loan,false,bank_statement,0.82,inappropriate,Debt refinancing may be prohibited depending on program use
+B004,EIDL,200000,2021-07-25,9500.00,dividend,Shareholder Distribution,member distribution,true,journal_entry,0.94,inappropriate,Dividend or distribution to owner
+B005,PPP,45000,2021-02-19,8300.00,payroll,Gusto Payroll,wages for employees,false,payroll_report,0.06,allowed,Eligible payroll
+B005,PPP,45000,2021-02-26,1900.00,rent,Northside Offices,office lease payment,false,lease_and_receipt,0.08,allowed,Eligible nonpayroll cost
+B005,PPP,45000,2021-03-03,6000.00,contractor_payment,Owner Consulting LLC,consulting fee to owner's separate company,true,invoice_only,0.61,questionable,Related-party vendor needs review
+B005,PPP,45000,2021-03-11,3200.00,marketing,Local Ads LLC,reopening advertising campaign,false,invoice,0.45,questionable,May be ordinary expense but needs program context review
+B006,EIDL,75000,2021-08-04,2200.00,insurance,Statewide Insurance,business liability insurance,false,invoice_and_bank_statement,0.10,allowed,Ordinary business expense
+B006,EIDL,75000,2021-08-10,4800.00,equipment,TechMart,point-of-sale replacement terminals,false,invoice,0.49,questionable,Could be operating replacement or fixed asset depending context
+B006,EIDL,75000,2021-08-14,3600.00,marketing,Local Ads LLC,reopening advertising campaign,false,invoice,0.46,questionable,May be ordinary expense but needs policy context review
+B006,EIDL,75000,2021-08-20,1500.00,utilities,City Water,business water bill,false,invoice_and_bank_statement,0.06,allowed,Normal operating utility
+B007,PPP,98000,2021-05-01,22000.00,crypto_exchange,CoinHub,purchase of cryptocurrency,true,bank_statement,0.99,inappropriate,Investment or personal speculative use
+B007,PPP,98000,2021-05-04,7500.00,jewelry,Diamond Gallery,watch purchase,true,receipt,0.98,inappropriate,Personal luxury purchase
+B007,PPP,98000,2021-05-12,6400.00,payroll,Manual Check,wages paid by handwritten checks,false,bank_statement_only,0.42,questionable,Payroll claim lacks normal payroll report or tax support
+B008,EIDL,110000,2021-09-01,9100.00,accounts_payable,Food Distributor Inc,past-due supplier invoice,false,invoice_and_check,0.11,allowed,Normal payable or working capital
+B008,EIDL,110000,2021-09-08,4300.00,utilities,City Water,business water bill,false,invoice,0.07,allowed,Normal operating utility
+B008,EIDL,110000,2021-09-15,12000.00,dividend,Shareholder Distribution,member distribution,true,journal_entry,0.93,inappropriate,Dividend or distribution to owner
+B008,EIDL,110000,2021-09-22,2750.00,insurance,Statewide Insurance,commercial property policy,false,invoice_and_bank_statement,0.12,allowed,Ordinary business insurance
+B009,PPP,65000,2021-03-01,10200.00,payroll,Paychex,wages for covered pay period,false,payroll_report,0.05,allowed,Payroll is documented
+B009,PPP,65000,2021-03-07,880.00,utilities,FastNet Internet,business internet service,false,utility_invoice,0.08,allowed,Business utility expense
+B009,PPP,65000,2021-03-12,3000.00,cash_withdrawal,ATM Cash Withdrawal,cash withdrawal with no receipts,true,bank_statement_only,0.74,questionable,Cash withdrawal lacks expense-level support
+B009,PPP,65000,2021-03-18,11400.00,payroll,Paychex,wages for covered pay period,false,payroll_report,0.05,allowed,Payroll aligns with covered period
+B010,EIDL,250000,2021-10-03,18500.00,inventory,Medical Supply Wholesale,replacement inventory,false,invoice_and_receipt,0.13,allowed,Working capital inventory expense
+B010,EIDL,250000,2021-10-09,5600.00,accounts_payable,Packaging Vendor Inc,past due packaging invoices,false,invoice_and_check,0.15,allowed,Ordinary payable tied to operations
+B010,EIDL,250000,2021-10-18,38000.00,real_estate,Premier Renovations,build-out for second location,false,contract_invoice,0.86,inappropriate,Expansion or new location build-out
+B010,EIDL,250000,2021-10-26,4200.00,professional_services,CPA Partners,bookkeeping and tax cleanup,false,invoice,0.31,questionable,Potential business service but needs scope review
+B011,PPP,30000,2021-02-01,5800.00,payroll,Square Payroll,employee wages,false,payroll_report,0.05,allowed,Eligible payroll
+B011,PPP,30000,2021-02-08,1200.00,rent,Westside Retail Center,storefront rent,false,lease_and_receipt,0.07,allowed,Eligible rent
+B011,PPP,30000,2021-02-11,2100.00,personal_credit_card,Owner Visa,payment to owner's personal credit card,true,bank_statement_only,0.90,inappropriate,Personal credit card payment
+B011,PPP,30000,2021-02-18,5900.00,payroll,Square Payroll,employee wages,false,payroll_report,0.05,allowed,Eligible payroll
+B012,EIDL,90000,2021-11-02,7200.00,rent,Industrial Park LLC,monthly facility rent,false,lease_and_bank_statement,0.08,allowed,Normal operating rent
+B012,EIDL,90000,2021-11-06,2800.00,utilities,Regional Power,business electric bill,false,invoice_and_bank_statement,0.06,allowed,Normal operating utility
+B012,EIDL,90000,2021-11-10,15000.00,stock_purchase,Online Brokerage,public stock purchase,true,bank_statement,0.97,inappropriate,Investment purchase unrelated to business operations
+B012,EIDL,90000,2021-11-18,4500.00,repairs,HVAC Service Co,emergency repair to existing HVAC,false,invoice_and_receipt,0.28,questionable,Repair may be normal operation but needs disaster/program context
+B013,PPP,155000,2021-04-01,28700.00,payroll,TriNet Payroll,gross wages for covered pay period,false,payroll_report,0.04,allowed,Documented payroll
+B013,PPP,155000,2021-04-06,5200.00,health_benefits,Aetna,employee health plan premium,false,invoice_and_bank_statement,0.07,allowed,Employer health benefit cost
+B013,PPP,155000,2021-04-13,8400.00,rent,Downtown Office LLC,office rent,false,lease_and_canceled_check,0.08,allowed,Business rent with proof
+B013,PPP,155000,2021-04-20,10000.00,contractor_payment,Family Admin Services,administrative consulting by owner's spouse,true,invoice_only,0.67,questionable,Related-party service requires review
+B014,EIDL,180000,2021-12-03,14200.00,accounts_payable,Parts Supplier Co,overdue supplier account,false,invoice_and_check,0.12,allowed,Normal operating payable
+B014,EIDL,180000,2021-12-09,6600.00,insurance,Commercial Mutual,business insurance renewal,false,invoice_and_bank_statement,0.10,allowed,Ordinary insurance cost
+B014,EIDL,180000,2021-12-15,30000.00,owner_draw,Owner Transfer,transfer to personal brokerage,true,bank_statement,0.96,inappropriate,Owner draw or personal transfer
+B014,EIDL,180000,2021-12-22,7400.00,equipment,Restaurant Equipment Depot,replacement freezer for failed unit,false,invoice_and_receipt,0.37,questionable,Could be replacement equipment or fixed asset
+B015,PPP,72000,2021-05-03,13600.00,payroll,QuickBooks Payroll,employee wages,false,payroll_report,0.05,allowed,Eligible payroll
+B015,PPP,72000,2021-05-10,2500.00,utilities,Telecom Provider,business phone and internet,false,invoice,0.07,allowed,Business utility service
+B015,PPP,72000,2021-05-14,4100.00,software,CloudOps SaaS,remote work software subscription,false,invoice_and_receipt,0.33,questionable,Operations expenditure may be eligible depending PPP rules and timing
+B015,PPP,72000,2021-05-21,9000.00,travel,Island Air,owner vacation flights,true,credit_card_statement,0.95,inappropriate,Personal travel
