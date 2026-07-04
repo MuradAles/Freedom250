@@ -11,6 +11,13 @@ class Settings(BaseSettings):
     # Comma-separated list of allowed CORS origins (frontend URLs).
     cors_origins: str = "http://localhost:3000"
 
+    # --- LLM (OpenRouter, OpenAI-compatible API) ---
+    openrouter_api_key: str = ""
+    openrouter_base_url: str = "https://openrouter.ai/api/v1"
+    llm_model: str = "anthropic/claude-sonnet-4.5"
+    # Path to the data/ directory (defaults to repo-root/data relative to backend/).
+    data_dir: str = "../data"
+
     @property
     def cors_origin_list(self) -> list[str]:
         return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]

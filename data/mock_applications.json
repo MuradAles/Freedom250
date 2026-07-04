@@ -1,0 +1,149 @@
+[
+  {
+    "business_id": "FS001",
+    "business_name": "Main Street Bakery",
+    "program": "7a",
+    "loan_amount": 185000,
+    "naics_code": "311811",
+    "business_type": "LLC",
+    "employee_count": 12,
+    "years_in_business": 6,
+    "ownership": [{ "name": "Jane Doe", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "FS002",
+    "business_name": "Laredo Auto Repair",
+    "program": "7a",
+    "loan_amount": 95000,
+    "naics_code": "811111",
+    "business_type": "S-Corp",
+    "employee_count": 14,
+    "years_in_business": 9,
+    "ownership": [{ "name": "Miguel Alvarez", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": false }
+  },
+  {
+    "business_id": "FS003",
+    "business_name": "Bluebonnet Medical Supply",
+    "program": "eidl",
+    "loan_amount": 210000,
+    "naics_code": "423450",
+    "business_type": "Corporation",
+    "employee_count": 260,
+    "years_in_business": 11,
+    "ownership": [
+      { "name": "Sarah Kim", "pct": 60 },
+      { "name": "David Kim", "pct": 40 }
+    ],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "FS004",
+    "business_name": "Coastal Event Rentals",
+    "program": "7a",
+    "loan_amount": 160000,
+    "naics_code": "532490",
+    "business_type": "Non-Profit",
+    "employee_count": 18,
+    "years_in_business": 4,
+    "ownership": [{ "name": "Tom Rivera", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ001",
+    "business_name": "Harborview Cafe",
+    "program": "PPP",
+    "loan_amount": 94000,
+    "naics_code": "722511",
+    "business_type": "LLC",
+    "employee_count": 22,
+    "years_in_business": 7,
+    "ownership": [{ "name": "Elena Marsh", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ002",
+    "business_name": "Lone Star Machine Works",
+    "program": "EIDL",
+    "loan_amount": 175000,
+    "naics_code": "332710",
+    "business_type": "S-Corp",
+    "employee_count": 31,
+    "years_in_business": 15,
+    "ownership": [{ "name": "Roy Tanner", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ003",
+    "business_name": "Brightpath Clinic",
+    "program": "PPP",
+    "loan_amount": 125000,
+    "naics_code": "621111",
+    "business_type": "Corporation",
+    "employee_count": 18,
+    "years_in_business": 8,
+    "ownership": [{ "name": "Dr. Amir Patel", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ004",
+    "business_name": "Summit Event Rentals",
+    "program": "EIDL",
+    "loan_amount": 220000,
+    "naics_code": "532490",
+    "business_type": "LLC",
+    "employee_count": 26,
+    "years_in_business": 6,
+    "ownership": [{ "name": "Grant Holloway", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ005",
+    "business_name": "Riverbend Market",
+    "program": "PPP",
+    "loan_amount": 88000,
+    "naics_code": "445110",
+    "business_type": "LLC",
+    "employee_count": 19,
+    "years_in_business": 12,
+    "ownership": [{ "name": "Nadia Osei", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ006",
+    "business_name": "Northstar Cleaning Services",
+    "program": "PPP",
+    "loan_amount": 62000,
+    "naics_code": "561720",
+    "business_type": "LLC",
+    "employee_count": 15,
+    "years_in_business": 5,
+    "ownership": [{ "name": "Paul Genovese", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ007",
+    "business_name": "Copperline Design Studio",
+    "program": "PPP",
+    "loan_amount": 76000,
+    "naics_code": "541430",
+    "business_type": "Sole Proprietorship",
+    "employee_count": 6,
+    "years_in_business": 4,
+    "ownership": [{ "name": "Casey Lund", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  },
+  {
+    "business_id": "BIZ008",
+    "business_name": "Greenfield Childcare",
+    "program": "EIDL",
+    "loan_amount": 130000,
+    "naics_code": "624410",
+    "business_type": "LLC",
+    "employee_count": 24,
+    "years_in_business": 9,
+    "ownership": [{ "name": "Maria Delgado", "pct": 100 }],
+    "certifications": { "nondiscrimination": true, "anti_lobbying": true }
+  }
+]
