@@ -399,3 +399,108 @@
   line-height: 1.55;
   margin: 0;
 }
+
+/* --- How-it-works explainer panel --- */
+.explainer {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.explainer-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #14213d;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.explainer-chevron {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.explainer-body {
+  padding: 20px;
+}
+
+.explainer-intro {
+  margin: 0 0 18px;
+  color: #344054;
+  line-height: 1.5;
+  max-width: 900px;
+}
+
+.explainer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.explainer-col h4 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #14213d;
+}
+
+.explainer-sub {
+  margin: 10px 0 6px;
+  color: #475467;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.explainer-list,
+.explainer-bands {
+  margin: 6px 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.explainer-list li,
+.explainer-bands li {
+  font-size: 0.85rem;
+  color: #344054;
+  padding: 3px 0;
+  line-height: 1.4;
+}
+
+.explainer-verdicts {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.explainer-verdicts li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 0.87rem;
+  color: #344054;
+  line-height: 1.4;
+}
+
+.explainer-verdicts .chip {
+  flex: 0 0 auto;
+  min-width: 48px;
+  text-align: center;
+}
+
+.explainer-note {
+  margin: 12px 0 0;
+  font-size: 0.82rem;
+  color: #667085;
+  line-height: 1.45;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 10px 12px;
+}

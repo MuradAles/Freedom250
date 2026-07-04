@@ -54,12 +54,17 @@ def run_audit(business_id: str) -> tuple[list[Finding], dict]:
     findings: list[Finding] = []
     for item in result.get("transactions", []):
         row = item.get("row")
+        confidence = float(item["confidence"])
+        verdict = item["verdict"]
+        # Same consistency rule as eligibility: a shaky pass/fail becomes a flag.
+        if confidence < 0.60 and verdict in ("pass", "fail"):
+            verdict = "flag"
         findings.append(
             Finding(
                 check_id="AUDIT",
                 subject=f"transaction:{row}",
-                verdict=item["verdict"],
-                confidence=float(item["confidence"]),
+                verdict=verdict,
+                confidence=confidence,
                 citation=citation,
                 cited_text=item.get("cited_text", ""),
                 rationale=item["rationale"],

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getApplications, runEligibilityCheck, runAudit, isLlmNotConfigured } from '../api';
 import StatusChip from './StatusChip';
 import EvalWidget from './EvalWidget';
+import HowItWorks from './HowItWorks';
 
 /** Table of loan records with a per-row "Run checks"/"Run audit" action. */
 export default function Dashboard({ onSelect }) {
@@ -44,6 +45,7 @@ export default function Dashboard({ onSelect }) {
 
   return (
     <div>
+      <HowItWorks />
       <EvalWidget />
 
       <h2 className="section-title">Loan records</h2>

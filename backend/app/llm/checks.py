@@ -58,12 +58,26 @@ def _primary_citation(check_id: str, sections: list[dict]) -> str:
     return f"13 CFR § {RETRIEVAL_MAP[check_id][0]}"
 
 
+# Below this confidence, a pass/fail is not decisive enough to stand — it
+# becomes a flag for human review (mirrors the rubric's consistency rule).
+FLAG_THRESHOLD = 0.60
+
+
+def _apply_flag_threshold(verdict: str, confidence: float) -> str:
+    """Coerce a low-confidence pass/fail into a flag (defense-in-depth vs. the prompt rule)."""
+    if confidence < FLAG_THRESHOLD and verdict in ("pass", "fail"):
+        return "flag"
+    return verdict
+
+
 def _finding(check_id: str, judgment: dict, sections: list[dict]) -> Finding:
+    confidence = float(judgment["confidence"])
+    verdict = _apply_flag_threshold(judgment["verdict"], confidence)
     return Finding(
         check_id=check_id,
         subject="application",
-        verdict=judgment["verdict"],
-        confidence=float(judgment["confidence"]),
+        verdict=verdict,
+        confidence=confidence,
         citation=_primary_citation(check_id, sections),
         cited_text=judgment.get("cited_text", ""),
         rationale=judgment["rationale"],
@@ -105,6 +119,21 @@ def run_eligibility(business_id: str) -> list[Finding]:
     return findings
 
 
+def _margin_confidence(actual: float, threshold: float, has_value: bool) -> float:
+    """Grade an E1 size decision by relative distance from the threshold.
+
+    At/near the limit -> ~0.60 (barely decisive); far from it -> approaches 0.99.
+    Missing the measured value entirely -> low, so it reads as unreliable.
+    """
+    if not has_value or threshold <= 0:
+        return 0.45
+    margin = abs(actual - threshold) / threshold  # fractional distance from the line
+    # Map margin 0..1+ onto confidence 0.60..0.99 (saturates once you're ~a full
+    # threshold away in either direction).
+    confidence = 0.60 + 0.39 * min(margin, 1.0)
+    return round(confidence, 2)
+
+
 def _run_e1(business_id: str, overlay: dict, app_view: dict) -> Finding:
     """Mostly deterministic: compare against the parsed §121.201 standard."""
     sections = _sections_for("E1")
@@ -114,7 +143,7 @@ def _run_e1(business_id: str, overlay: dict, app_view: dict) -> Finding:
     employees = overlay.get("employee_count")
 
     if std is None:
-        verdict, confidence = "flag", 0.4
+        verdict, confidence = "flag", 0.35
         rationale = (
             f"No §121.201 size standard found for NAICS {naics}; cannot verify size "
             "deterministically — needs human review."
@@ -122,14 +151,18 @@ def _run_e1(business_id: str, overlay: dict, app_view: dict) -> Finding:
         cited = "The size standards described in this section apply to all SBA programs."
     else:
         if std["type"] == "employees":
+            actual = employees if employees is not None else 0
             over = employees is not None and employees > std["threshold"]
             measure = f"{employees} employees vs. limit {int(std['threshold'])}"
         else:  # receipts, threshold in $millions
-            rev_m = (revenue or 0) / 1_000_000
-            over = rev_m > std["threshold"]
-            measure = f"${rev_m:.2f}M receipts vs. limit ${std['threshold']}M"
+            actual = (revenue or 0) / 1_000_000
+            over = actual > std["threshold"]
+            measure = f"${actual:.2f}M receipts vs. limit ${std['threshold']}M"
         verdict = "fail" if over else "pass"
-        confidence = 0.95
+        # Confidence scales with the margin from the limit: a business far under
+        # (or far over) the standard is a near-certain call; one hugging the line
+        # is closer to a coin-flip and should read that way.
+        confidence = _margin_confidence(actual, std["threshold"], has_value=(employees is not None or revenue is not None))
         rationale = (
             f"{overlay.get('business_name')} ({std['title']}, NAICS {naics}): {measure}. "
             + ("Exceeds the size standard — not a small business." if over else "Within the size standard.")
@@ -154,13 +187,22 @@ def _run_e1(business_id: str, overlay: dict, app_view: dict) -> Finding:
 def _run_e5(overlay: dict, app_view: dict) -> Finding:
     """Deterministic presence check on certification booleans."""
     sections = _sections_for("E5")
-    certs = overlay.get("certifications", {})
-    missing = [k for k in ("nondiscrimination", "anti_lobbying") if not certs.get(k)]
-    if missing:
-        verdict, confidence = "fail", 0.9
+    certs = overlay.get("certifications") or {}
+    required = ("nondiscrimination", "anti_lobbying")
+    present = {k: bool(certs.get(k)) for k in required}
+    missing = [k for k, ok in present.items() if not ok]
+    if certs == {} or overlay.get("certifications") is None:
+        # No certification block at all — we can't attest presence either way.
+        verdict, confidence = "flag", 0.45
+        rationale = "No certification data on the application — cannot verify presence; needs review."
+    elif missing:
+        # A boolean present/absent check is highly reliable; a full miss is more
+        # decisive than a partial one.
+        verdict = "fail"
+        confidence = 0.97 if len(missing) == len(required) else 0.90
         rationale = f"Missing required certification(s): {', '.join(missing)}."
     else:
-        verdict, confidence = "pass", 0.9
+        verdict, confidence = "pass", 0.97
         rationale = "Required certifications (nondiscrimination, anti-lobbying) are present."
     cited = sections[0]["heading"] if sections else "Certification requirements."
     return Finding(
