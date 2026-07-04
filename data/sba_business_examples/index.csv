@@ -1,0 +1,9 @@
+file_name,business_id,business_name,program,loan_amount,case_label,summary
+01_harborview_cafe_not_flagged.csv,BIZ001,Harborview Cafe,PPP,94000,not_flagged,Documented payroll rent utilities and health benefit costs
+02_lone_star_machine_not_flagged.csv,BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,Documented working capital operating expenses and supplier payables
+03_brightpath_clinic_flagged.csv,BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,Owner transfers personal vehicle travel jewelry and personal credit card payments
+04_summit_event_rentals_flagged.csv,BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,Expansion owner bonus shareholder distribution refinance and stock purchase
+05_riverbend_market_review.csv,BIZ005,Riverbend Market,PPP,88000,needs_review,Mostly payroll with cash withdrawal and related-party consulting
+06_northstar_cleaning_not_flagged.csv,BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,Payroll-dominant PPP spending with rent utilities and benefits
+07_copperline_studio_flagged.csv,BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,Crypto purchase personal travel luxury purchase owner draw and club membership
+08_greenfield_childcare_review.csv,BIZ008,Greenfield Childcare,EIDL,130000,needs_review,Normal rent utilities and payables mixed with owner bonus and equipment replacement

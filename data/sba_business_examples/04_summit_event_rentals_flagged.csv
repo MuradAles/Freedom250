@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,2021-08-03,44000.00,real_estate,BuildRight Contractors,new showroom expansion,false,contract_invoice,0.88,inappropriate,Expansion or fixed improvement is not normal working capital
+BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,2021-08-09,28000.00,owner_bonus,Owner Payroll,special owner bonus,true,payroll_stub,0.91,inappropriate,Bonus or distribution to owner
+BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,2021-08-14,15000.00,debt_refinance,Regional Bank,payoff old business loan,false,bank_statement,0.82,inappropriate,Debt refinancing may be prohibited depending on program use
+BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,2021-08-19,12500.00,dividend,Shareholder Distribution,member distribution,true,journal_entry,0.94,inappropriate,Dividend or distribution to owner
+BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,2021-08-25,17000.00,stock_purchase,Online Brokerage,public stock purchase,true,bank_statement,0.97,inappropriate,Investment purchase unrelated to business operations
+BIZ004,Summit Event Rentals,EIDL,220000,flagged_possible_fraud,2021-08-31,6400.00,vehicle,City Motors,personal vehicle lease payment,true,receipt,0.95,inappropriate,Personal vehicle expense

@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,2021-04-02,18500.00,owner_draw,Owner Transfer,transfer to owner's personal checking,true,bank_statement_only,0.92,inappropriate,Owner draw unrelated to documented payroll
+BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,2021-04-06,9700.00,vehicle,Luxury Auto Group,down payment on personal SUV,true,receipt,0.96,inappropriate,Personal vehicle purchase
+BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,2021-04-11,2400.00,travel,Oceanfront Resort,weekend resort stay,true,credit_card_statement,0.95,inappropriate,Personal travel or lodging
+BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,2021-04-16,6200.00,jewelry,Diamond Gallery,watch purchase,true,receipt,0.98,inappropriate,Personal luxury purchase
+BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,2021-04-21,3900.00,personal_credit_card,Owner Visa,payment to owner's personal credit card,true,bank_statement_only,0.91,inappropriate,Personal credit card payment
+BIZ003,Brightpath Clinic,PPP,125000,flagged_possible_fraud,2021-04-29,12000.00,owner_draw,Owner Transfer,transfer to personal savings,true,bank_statement_only,0.92,inappropriate,Owner draw lacks eligible payroll support

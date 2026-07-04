@@ -1,0 +1,25 @@
+business_id,business_name,submission_context,period,record_type,record_date,line_item,counterparty,description,debit,credit,balance,amount,source_document,case_label,review_note
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025,profit_and_loss,,gross_revenue,,medical supplies wholesale revenue,,,,978000.00,2025_profit_loss.pdf,normal,Revenue supported by customer invoices and deposits
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025,profit_and_loss,,cost_of_goods_sold,,purchased medical supplies,,,,612000.00,2025_profit_loss.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025,profit_and_loss,,gross_profit,,gross revenue less COGS,,,,366000.00,2025_profit_loss.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025,profit_and_loss,,payroll_expense,,warehouse sales and admin wages,,,,178400.00,2025_profit_loss.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025,profit_and_loss,,rent_expense,,warehouse lease,,,,84000.00,2025_profit_loss.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025,profit_and_loss,,net_income,,income after expenses,,,,46200.00,2025_profit_loss.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12-31,balance_sheet,,cash,,operating account,,,,58300.00,2025_balance_sheet.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12-31,balance_sheet,,accounts_receivable,,clinic and home health receivables,,,,132500.00,2025_balance_sheet.pdf,normal,AR aging supplied
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12-31,balance_sheet,,inventory,,medical gloves masks wound care supplies,,,,188400.00,2025_balance_sheet.pdf,normal,Inventory report supplied
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12-31,balance_sheet,,accounts_payable,,supplier payables,,,,146900.00,2025_balance_sheet.pdf,normal,AP aging supplied
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12-31,balance_sheet,,term_debt,,delivery van note,,,,35500.00,2025_balance_sheet.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,bank_statement,2025-12-02,deposit,Clinic Customer ACH,invoice payments,,44800.00,78100.00,,dec_2025_bank_statement.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,bank_statement,2025-12-04,supplier_payment,MedGlobal Wholesale,supply invoice payment,36500.00,,41600.00,,dec_2025_bank_statement.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,bank_statement,2025-12-07,payroll,Gusto Payroll,biweekly payroll,13750.00,,27850.00,,dec_2025_bank_statement.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,bank_statement,2025-12-11,rent,Warehouse Leasing LLC,monthly warehouse rent,7000.00,,20850.00,,dec_2025_bank_statement.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,bank_statement,2025-12-18,deposit,Home Health Group,invoice payments,,38950.00,59800.00,,dec_2025_bank_statement.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,bank_statement,2025-12-21,supplier_payment,SterilePack Inc,packaging and supplies,21400.00,,38400.00,,dec_2025_bank_statement.pdf,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,ar_aging,2025-12-31,current,South Clinic Network,invoices under 30 days,,,,48700.00,ar_aging_2025_12.xlsx,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,ar_aging,2025-12-31,61_90_days,Home Care Partners,invoices 61 to 90 days,,,,22100.00,ar_aging_2025_12.xlsx,normal,Older AR noted but customer payment history is stable
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,ap_aging,2025-12-31,current,MedGlobal Wholesale,vendor invoices under 30 days,,,,64200.00,ap_aging_2025_12.xlsx,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2025-12,inventory_report,2025-12-31,inventory_on_hand,,gloves masks wound care kits,,,,188400.00,inventory_report_2025_12.xlsx,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2026,use_of_proceeds,,working_capital,,supplier payables and ordinary operating expenses,,,,120000.00,use_of_proceeds.xlsx,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2026,use_of_proceeds,,inventory,,replacement medical supply inventory,,,,65000.00,use_of_proceeds.xlsx,normal,
+FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,2026,use_of_proceeds,,rent_utilities,,warehouse rent and utilities reserve,,,,25000.00,use_of_proceeds.xlsx,normal,

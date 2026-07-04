@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,2021-03-03,10100.00,payroll,Gusto Payroll,employee wages,false,payroll_report,0.05,allowed,Eligible payroll
+BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,2021-03-10,2300.00,rent,Northside Retail Center,storefront rent,false,lease_and_receipt,0.07,allowed,Eligible rent
+BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,2021-03-12,640.00,utilities,FastNet Internet,business internet service,false,utility_invoice,0.05,allowed,Business utility service
+BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,2021-03-17,10350.00,payroll,Gusto Payroll,employee wages,false,payroll_report,0.05,allowed,Eligible payroll
+BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,2021-03-24,1200.00,health_benefits,Delta Dental,employee dental premium,false,invoice_and_bank_statement,0.06,allowed,Employer health benefit cost
+BIZ006,Northstar Cleaning Services,PPP,62000,not_flagged,2021-03-31,9800.00,payroll,Gusto Payroll,employee wages,false,payroll_report,0.05,allowed,Eligible payroll

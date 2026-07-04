@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ001,Harborview Cafe,PPP,94000,not_flagged,2021-02-05,14200.00,payroll,ADP Payroll,gross wages for covered pay period,false,payroll_report,0.04,allowed,Documented employee payroll
+BIZ001,Harborview Cafe,PPP,94000,not_flagged,2021-02-08,3100.00,health_benefits,Blue Cross,employee health plan premium,false,invoice_and_bank_statement,0.06,allowed,Employer benefit cost
+BIZ001,Harborview Cafe,PPP,94000,not_flagged,2021-02-12,5200.00,rent,Market Street Offices,monthly office rent,false,lease_and_canceled_check,0.07,allowed,Business rent with support
+BIZ001,Harborview Cafe,PPP,94000,not_flagged,2021-02-16,880.00,utilities,City Electric,business electric bill,false,utility_invoice,0.04,allowed,Business utility expense
+BIZ001,Harborview Cafe,PPP,94000,not_flagged,2021-02-19,13950.00,payroll,ADP Payroll,gross wages for covered pay period,false,payroll_report,0.04,allowed,Documented employee payroll
+BIZ001,Harborview Cafe,PPP,94000,not_flagged,2021-02-26,14400.00,payroll,ADP Payroll,gross wages for covered pay period,false,payroll_report,0.04,allowed,Documented employee payroll

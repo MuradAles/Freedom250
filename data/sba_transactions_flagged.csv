@@ -1,0 +1,21 @@
+borrower_id,program,loan_amount,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,audit_flag,label,label_reason
+FG001,PPP,125000,2021-04-02,18500.00,owner_draw,Owner Transfer,transfer to owner's personal checking,true,bank_statement_only,0.92,true,inappropriate,Owner draw unrelated to documented payroll
+FG001,PPP,125000,2021-04-06,9700.00,vehicle,Luxury Auto Group,down payment on personal SUV,true,receipt,0.96,true,inappropriate,Personal vehicle purchase
+FG001,PPP,125000,2021-04-11,2400.00,travel,Oceanfront Resort,weekend resort stay,true,credit_card_statement,0.95,true,inappropriate,Personal travel or lodging
+FG001,PPP,125000,2021-04-16,6200.00,jewelry,Diamond Gallery,watch purchase,true,receipt,0.98,true,inappropriate,Personal luxury purchase
+FG001,PPP,125000,2021-04-21,3900.00,personal_credit_card,Owner Visa,payment to owner's personal credit card,true,bank_statement_only,0.91,true,inappropriate,Personal credit card payment
+FG002,EIDL,220000,2021-08-03,44000.00,real_estate,BuildRight Contractors,new patio expansion,false,contract_invoice,0.88,true,inappropriate,Expansion or fixed improvement is not normal working capital
+FG002,EIDL,220000,2021-08-09,28000.00,owner_bonus,Owner Payroll,special owner bonus,true,payroll_stub,0.91,true,inappropriate,Bonus or distribution to owner
+FG002,EIDL,220000,2021-08-14,15000.00,debt_refinance,Regional Bank,payoff old business loan,false,bank_statement,0.82,true,inappropriate,Debt refinancing may be prohibited depending on program use
+FG002,EIDL,220000,2021-08-19,12500.00,dividend,Shareholder Distribution,member distribution,true,journal_entry,0.94,true,inappropriate,Dividend or distribution to owner
+FG002,EIDL,220000,2021-08-25,17000.00,stock_purchase,Online Brokerage,public stock purchase,true,bank_statement,0.97,true,inappropriate,Investment purchase unrelated to business operations
+FG003,PPP,76000,2021-05-03,21000.00,crypto_exchange,CoinHub,purchase of cryptocurrency,true,bank_statement,0.99,true,inappropriate,Investment or personal speculative use
+FG003,PPP,76000,2021-05-08,8600.00,travel,Island Air,owner vacation flights,true,credit_card_statement,0.95,true,inappropriate,Personal travel
+FG003,PPP,76000,2021-05-11,5400.00,jewelry,Gold Market,personal jewelry purchase,true,receipt,0.98,true,inappropriate,Personal luxury purchase
+FG003,PPP,76000,2021-05-17,12000.00,owner_draw,Owner Transfer,cash transfer to personal savings,true,bank_statement_only,0.92,true,inappropriate,Owner draw lacks eligible payroll support
+FG003,PPP,76000,2021-05-24,4500.00,entertainment,Private Club,owner club membership,true,credit_card_statement,0.94,true,inappropriate,Personal entertainment expense
+FG004,EIDL,145000,2021-10-01,32500.00,real_estate,Premier Renovations,build-out for second location,false,contract_invoice,0.86,true,inappropriate,Expansion or new location build-out
+FG004,EIDL,145000,2021-10-07,21500.00,owner_draw,Owner Transfer,transfer to personal brokerage,true,bank_statement,0.96,true,inappropriate,Owner draw or personal transfer
+FG004,EIDL,145000,2021-10-13,9800.00,dividend,Shareholder Distribution,shareholder distribution,true,journal_entry,0.94,true,inappropriate,Dividend or distribution to owner
+FG004,EIDL,145000,2021-10-20,11000.00,debt_refinance,Regional Bank,refinance existing term debt,false,bank_statement,0.82,true,inappropriate,Debt refinancing may be prohibited depending on program use
+FG004,EIDL,145000,2021-10-27,6400.00,vehicle,City Motors,personal vehicle lease payment,true,receipt,0.95,true,inappropriate,Personal vehicle expense

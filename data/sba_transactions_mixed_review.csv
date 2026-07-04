@@ -1,0 +1,25 @@
+borrower_id,program,loan_amount,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,audit_flag,label,label_reason
+MX001,PPP,88000,2021-03-01,12800.00,payroll,Paychex,gross wages for covered pay period,false,payroll_report,0.05,false,allowed,Documented payroll
+MX001,PPP,88000,2021-03-05,4200.00,rent,Oak Plaza Offices,monthly office rent,false,lease_and_receipt,0.07,false,allowed,Business rent with support
+MX001,PPP,88000,2021-03-09,3500.00,cash_withdrawal,ATM Cash Withdrawal,cash withdrawal with no receipts,true,bank_statement_only,0.74,true,questionable,Cash withdrawal lacks expense-level support
+MX001,PPP,88000,2021-03-15,13000.00,payroll,Paychex,gross wages for covered pay period,false,payroll_report,0.05,false,allowed,Documented payroll
+MX001,PPP,88000,2021-03-22,5800.00,contractor_payment,Owner Consulting LLC,consulting fee to owner's separate company,true,invoice_only,0.63,true,questionable,Related-party vendor needs review
+MX002,EIDL,160000,2021-07-02,9200.00,inventory,Food Distributor Inc,replacement inventory,false,invoice_and_receipt,0.12,false,allowed,Working capital inventory expense
+MX002,EIDL,160000,2021-07-07,2900.00,utilities,City Electric,business electric bill,false,invoice_and_bank_statement,0.05,false,allowed,Normal operating utility
+MX002,EIDL,160000,2021-07-12,7600.00,equipment,Restaurant Equipment Depot,replacement freezer for failed unit,false,invoice_and_receipt,0.38,true,questionable,Could be replacement equipment or fixed asset
+MX002,EIDL,160000,2021-07-18,23000.00,real_estate,BuildRight Contractors,dining room expansion,false,contract_invoice,0.86,true,inappropriate,Expansion or fixed improvement
+MX002,EIDL,160000,2021-07-26,3700.00,professional_services,CPA Partners,bookkeeping cleanup,false,invoice,0.30,false,allowed,Ordinary professional service with support
+MX003,PPP,54000,2021-04-01,9300.00,payroll,Square Payroll,employee wages,false,payroll_report,0.05,false,allowed,Eligible payroll
+MX003,PPP,54000,2021-04-06,1100.00,utilities,FastNet Internet,business internet service,false,utility_invoice,0.05,false,allowed,Business utility service
+MX003,PPP,54000,2021-04-10,4200.00,marketing,Local Ads LLC,reopening advertising campaign,false,invoice,0.45,true,questionable,May be ordinary expense but needs program context
+MX003,PPP,54000,2021-04-17,8400.00,payroll,Manual Check,wages paid by handwritten checks,false,bank_statement_only,0.42,true,questionable,Payroll claim lacks normal payroll report or tax support
+MX003,PPP,54000,2021-04-24,5100.00,travel,Island Air,owner vacation flights,true,credit_card_statement,0.95,true,inappropriate,Personal travel
+MX004,EIDL,130000,2021-09-03,6800.00,rent,Industrial Park LLC,monthly facility rent,false,lease_and_bank_statement,0.08,false,allowed,Normal operating rent
+MX004,EIDL,130000,2021-09-09,1850.00,utilities,Regional Power,business electric bill,false,invoice_and_bank_statement,0.06,false,allowed,Normal operating utility
+MX004,EIDL,130000,2021-09-15,9200.00,accounts_payable,Parts Supplier Co,overdue supplier account,false,invoice_and_check,0.12,false,allowed,Normal operating payable
+MX004,EIDL,130000,2021-09-21,10500.00,owner_bonus,Owner Payroll,special owner bonus,true,payroll_stub,0.91,true,inappropriate,Bonus or distribution to owner
+MX004,EIDL,130000,2021-09-28,4600.00,repairs,HVAC Service Co,emergency repair to existing HVAC,false,invoice_and_receipt,0.28,false,allowed,Repair appears tied to existing operations
+MX005,PPP,101000,2021-05-04,16600.00,payroll,QuickBooks Payroll,employee wages,false,payroll_report,0.05,false,allowed,Eligible payroll
+MX005,PPP,101000,2021-05-11,2800.00,utilities,Telecom Provider,business phone and internet,false,invoice,0.07,false,allowed,Business utility service
+MX005,PPP,101000,2021-05-18,3500.00,software,CloudOps SaaS,remote work software subscription,false,invoice_and_receipt,0.33,false,allowed,Documented operating software expense
+MX005,PPP,101000,2021-05-25,15000.00,crypto_exchange,CoinHub,purchase of cryptocurrency,true,bank_statement,0.99,true,inappropriate,Investment or personal speculative use

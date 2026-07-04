@@ -1,0 +1,26 @@
+business_id,business_name,submission_context,period,record_type,record_date,line_item,counterparty,description,debit,credit,balance,amount,source_document,case_label,review_note
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025,profit_and_loss,,gross_revenue,,repair labor parts resale and diagnostics,,,,1264000.00,2025_profit_loss.pdf,normal,Revenue supported by deposits and merchant statements
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025,profit_and_loss,,cost_of_goods_sold,,replacement parts and shop supplies,,,,482300.00,2025_profit_loss.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025,profit_and_loss,,gross_profit,,gross revenue less COGS,,,,781700.00,2025_profit_loss.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025,profit_and_loss,,payroll_expense,,technician and service advisor wages,,,,392500.00,2025_profit_loss.pdf,normal,Payroll reports supplied
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025,profit_and_loss,,rent_expense,,shop lease,,,,96000.00,2025_profit_loss.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025,profit_and_loss,,net_income,,income after expenses,,,,112800.00,2025_profit_loss.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12-31,balance_sheet,,cash,,operating account,,,,142300.00,2025_balance_sheet.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12-31,balance_sheet,,accounts_receivable,,fleet customer receivables,,,,86400.00,2025_balance_sheet.pdf,normal,AR aging supplied
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12-31,balance_sheet,,inventory,,parts and fluids,,,,74300.00,2025_balance_sheet.pdf,normal,Inventory report supplied
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12-31,balance_sheet,,equipment_net,,lifts compressors diagnostic machines,,,,318000.00,2025_balance_sheet.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12-31,balance_sheet,,term_debt,,existing equipment notes,,,,164500.00,2025_balance_sheet.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,bank_statement,2025-12-03,deposit,Merchant Services,card settlement batch,,31750.24,151420.77,,dec_2025_bank_statement.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,bank_statement,2025-12-05,supplier_payment,NAPA Auto Parts,parts invoices,18400.00,,133020.77,,dec_2025_bank_statement.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,bank_statement,2025-12-06,payroll,Paychex,biweekly payroll,30220.18,,102800.59,,dec_2025_bank_statement.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,bank_statement,2025-12-11,rent,Industrial Shop Park,monthly lease,8000.00,,94800.59,,dec_2025_bank_statement.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,bank_statement,2025-12-19,deposit,Fleet Customer ACH,monthly fleet invoices,,54500.00,149300.59,,dec_2025_bank_statement.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,bank_statement,2025-12-23,loan_payment,Border Bank,equipment loan payment,3860.00,,145440.59,,dec_2025_bank_statement.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,ar_aging,2025-12-31,current,Rio Fleet Services,invoices under 30 days,,,,41200.00,ar_aging_2025_12.xlsx,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,ar_aging,2025-12-31,31_60_days,Webb Delivery Co,invoices 31 to 60 days,,,,27600.00,ar_aging_2025_12.xlsx,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,ap_aging,2025-12-31,current,NAPA Auto Parts,vendor invoices under 30 days,,,,23300.00,ap_aging_2025_12.xlsx,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,debt_schedule,2025-12-31,equipment_note,Border Bank,diagnostic equipment note,,,,68500.00,debt_schedule.xlsx,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2025-12,debt_schedule,2025-12-31,vehicle_note,Lone Star Credit Union,tow truck note,,,,96000.00,debt_schedule.xlsx,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2026,use_of_proceeds,,equipment_purchase,Hunter Engineering,alignment rack and tire balancer,,,,72000.00,equipment_quote_hunter.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2026,use_of_proceeds,,installation,,equipment delivery wiring and setup,,,,13000.00,vendor_quote_installation.pdf,normal,
+FS002,Laredo Auto Repair,bank_term_loan_equipment,2026,use_of_proceeds,,working_capital,,parts inventory during installation,,,,10000.00,use_of_proceeds.xlsx,normal,

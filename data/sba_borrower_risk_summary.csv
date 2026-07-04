@@ -1,0 +1,14 @@
+borrower_id,program,loan_amount,total_spent,transaction_count,pct_payroll,pct_owner_related,pct_missing_docs,questionable_count,inappropriate_count,max_transaction_amount,risk_score,audit_flag,label,label_reason
+NF001,PPP,94000,37330.00,5,75.4,0.0,0.0,0,0,14200.00,0.05,false,not_flagged,Mostly documented payroll and eligible nonpayroll costs
+NF002,EIDL,175000,30400.00,5,0.0,0.0,0.0,0,0,11200.00,0.10,false,not_flagged,Documented operating expenses and working capital
+NF003,PPP,62000,24590.00,5,83.2,0.0,0.0,0,0,10350.00,0.05,false,not_flagged,Payroll-dominant PPP spending with support
+NF004,EIDL,120000,21200.00,5,0.0,0.0,0.0,0,0,7200.00,0.10,false,not_flagged,Normal operating expenses with invoices
+FG001,PPP,125000,44700.00,5,0.0,100.0,40.0,0,5,18500.00,0.94,true,flagged,Owner-related personal spending and luxury categories
+FG002,EIDL,220000,116500.00,5,0.0,48.5,0.0,0,5,44000.00,0.91,true,flagged,Expansion owner bonus distribution refinance and investment activity
+FG003,PPP,76000,51300.00,5,0.0,100.0,20.0,0,5,21000.00,0.96,true,flagged,Investment personal travel luxury and owner transfers
+FG004,EIDL,145000,81200.00,5,0.0,46.4,0.0,0,5,32500.00,0.90,true,flagged,Expansion owner transfer distribution refinance and personal vehicle expense
+MX001,PPP,88000,39300.00,5,65.6,23.7,40.0,2,0,13000.00,0.54,true,review,Mostly payroll but includes cash withdrawal and related-party consulting
+MX002,EIDL,160000,46400.00,5,0.0,0.0,0.0,1,1,23000.00,0.55,true,review,Contains normal expenses plus equipment ambiguity and expansion spend
+MX003,PPP,54000,28100.00,5,63.0,18.1,20.0,2,1,9300.00,0.58,true,review,Eligible payroll mixed with weak documentation and personal travel
+MX004,EIDL,130000,32950.00,5,0.0,31.9,0.0,0,1,10500.00,0.43,true,review,Normal operating expenses mixed with owner bonus
+MX005,PPP,101000,37900.00,4,43.8,39.6,0.0,0,1,16600.00,0.52,true,review,Documented operations mixed with cryptocurrency purchase

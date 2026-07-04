@@ -1,0 +1,5 @@
+file_name,business_id,business_name,submission_context,requested_amount,case_label,contents
+01_main_street_bakery_submission.csv,FS001,Main Street Bakery,bank_sba_7a_working_capital,185000,normal,Financial statements bank activity AR/AP aging debt schedule and use of proceeds
+02_laredo_auto_repair_submission.csv,FS002,Laredo Auto Repair,bank_term_loan_equipment,95000,normal,Financial statements bank activity equipment quote debt schedule and use of proceeds
+03_bluebonnet_medical_supply_submission.csv,FS003,Bluebonnet Medical Supply,sba_eidl_working_capital,210000,normal,Financial statements bank activity inventory AP aging and working capital use of proceeds
+04_coastal_event_rentals_submission.csv,FS004,Coastal Event Rentals,sba_working_capital_review,160000,needs_review,Financial package with weak cash flow owner transfers missing documentation and inconsistent use of proceeds

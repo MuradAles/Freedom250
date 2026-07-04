@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ005,Riverbend Market,PPP,88000,needs_review,2021-03-01,12800.00,payroll,Paychex,gross wages for covered pay period,false,payroll_report,0.05,allowed,Documented payroll
+BIZ005,Riverbend Market,PPP,88000,needs_review,2021-03-05,4200.00,rent,Oak Plaza Offices,monthly office rent,false,lease_and_receipt,0.07,allowed,Business rent with support
+BIZ005,Riverbend Market,PPP,88000,needs_review,2021-03-09,3500.00,cash_withdrawal,ATM Cash Withdrawal,cash withdrawal with no receipts,true,bank_statement_only,0.74,questionable,Cash withdrawal lacks expense-level support
+BIZ005,Riverbend Market,PPP,88000,needs_review,2021-03-15,13000.00,payroll,Paychex,gross wages for covered pay period,false,payroll_report,0.05,allowed,Documented payroll
+BIZ005,Riverbend Market,PPP,88000,needs_review,2021-03-22,5800.00,contractor_payment,Owner Consulting LLC,consulting fee to owner's separate company,true,invoice_only,0.63,questionable,Related-party vendor needs review
+BIZ005,Riverbend Market,PPP,88000,needs_review,2021-03-29,9900.00,payroll,Paychex,gross wages for covered pay period,false,payroll_report,0.05,allowed,Documented payroll

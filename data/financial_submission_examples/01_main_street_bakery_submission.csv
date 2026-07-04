@@ -1,0 +1,26 @@
+business_id,business_name,submission_context,period,record_type,record_date,line_item,counterparty,description,debit,credit,balance,amount,source_document,case_label,review_note
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025,profit_and_loss,,gross_revenue,,total sales,,,,842500.00,2025_profit_loss.pdf,normal,Revenue matches bank deposits within expected timing variance
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025,profit_and_loss,,cost_of_goods_sold,,flour dairy packaging ingredients,,,,316400.00,2025_profit_loss.pdf,normal,COGS ratio consistent with bakery operations
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025,profit_and_loss,,gross_profit,,gross revenue less COGS,,,,526100.00,2025_profit_loss.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025,profit_and_loss,,payroll_expense,,wages payroll taxes and benefits,,,,238900.00,2025_profit_loss.pdf,normal,Payroll supported by provider reports
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025,profit_and_loss,,rent_expense,,retail bakery lease,,,,72000.00,2025_profit_loss.pdf,normal,Lease supplied
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025,profit_and_loss,,net_income,,income after expenses,,,,68450.00,2025_profit_loss.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12-31,balance_sheet,,cash,,operating and payroll accounts,,,,87640.00,2025_balance_sheet.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12-31,balance_sheet,,accounts_receivable,,wholesale cafe receivables,,,,34200.00,2025_balance_sheet.pdf,normal,AR aging supplied
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12-31,balance_sheet,,inventory,,ingredients packaging finished goods,,,,28600.00,2025_balance_sheet.pdf,normal,Inventory report supplied
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12-31,balance_sheet,,accounts_payable,,vendor payables,,,,41250.00,2025_balance_sheet.pdf,normal,AP aging supplied
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12-31,balance_sheet,,term_debt,,delivery van and equipment notes,,,,118400.00,2025_balance_sheet.pdf,normal,Debt schedule supplied
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,bank_statement,2025-12-02,deposit,Bakery POS Batch,card settlement batch,,18420.33,105240.18,,dec_2025_bank_statement.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,bank_statement,2025-12-04,payroll,ADP Payroll,biweekly payroll,21640.72,,83599.46,,dec_2025_bank_statement.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,bank_statement,2025-12-06,rent,Market Street Properties,monthly lease payment,6000.00,,77599.46,,dec_2025_bank_statement.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,bank_statement,2025-12-09,supplier_payment,Grain Valley Flour,flour invoice 45519,8420.00,,69179.46,,dec_2025_bank_statement.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,bank_statement,2025-12-16,deposit,Bakery POS Batch,card settlement batch,,20112.75,89292.21,,dec_2025_bank_statement.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,bank_statement,2025-12-18,loan_payment,First County Bank,van loan payment,1840.00,,87452.21,,dec_2025_bank_statement.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,ar_aging,2025-12-31,current,Wholesale Cafe Group,invoices under 30 days,,,,18500.00,ar_aging_2025_12.xlsx,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,ar_aging,2025-12-31,31_60_days,Hotel Catering LLC,invoices 31 to 60 days,,,,9700.00,ar_aging_2025_12.xlsx,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,ap_aging,2025-12-31,current,Grain Valley Flour,vendor invoices under 30 days,,,,12800.00,ap_aging_2025_12.xlsx,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2025-12,ap_aging,2025-12-31,31_60_days,Packaging Depot,vendor invoices 31 to 60 days,,,,8400.00,ap_aging_2025_12.xlsx,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2026,projected_cash_flow,,monthly_net_cash_flow,,average projected after debt service,,,,14600.00,2026_cash_flow_projection.xlsx,normal,Shows repayment capacity
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2026,use_of_proceeds,,working_capital,,seasonal inventory and supplier payables,,,,110000.00,use_of_proceeds.xlsx,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2026,use_of_proceeds,,equipment,,commercial oven replacement,,,,55000.00,equipment_quote_oven.pdf,normal,
+FS001,Main Street Bakery,bank_sba_7a_working_capital,2026,use_of_proceeds,,closing_costs,,loan fees and legal costs,,,,20000.00,use_of_proceeds.xlsx,normal,

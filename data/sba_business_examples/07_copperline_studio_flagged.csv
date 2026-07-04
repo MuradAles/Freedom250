@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,2021-05-03,21000.00,crypto_exchange,CoinHub,purchase of cryptocurrency,true,bank_statement,0.99,inappropriate,Investment or personal speculative use
+BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,2021-05-08,8600.00,travel,Island Air,owner vacation flights,true,credit_card_statement,0.95,inappropriate,Personal travel
+BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,2021-05-11,5400.00,jewelry,Gold Market,personal jewelry purchase,true,receipt,0.98,inappropriate,Personal luxury purchase
+BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,2021-05-17,12000.00,owner_draw,Owner Transfer,cash transfer to personal savings,true,bank_statement_only,0.92,inappropriate,Owner draw lacks eligible payroll support
+BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,2021-05-24,4500.00,entertainment,Private Club,owner club membership,true,credit_card_statement,0.94,inappropriate,Personal entertainment expense
+BIZ007,Copperline Design Studio,PPP,76000,flagged_possible_fraud,2021-05-28,7400.00,personal_credit_card,Owner Visa,payment to owner's personal credit card,true,bank_statement_only,0.91,inappropriate,Personal credit card payment

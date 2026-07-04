@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ008,Greenfield Childcare,EIDL,130000,needs_review,2021-09-03,6800.00,rent,Industrial Park LLC,monthly facility rent,false,lease_and_bank_statement,0.08,allowed,Normal operating rent
+BIZ008,Greenfield Childcare,EIDL,130000,needs_review,2021-09-09,1850.00,utilities,Regional Power,business electric bill,false,invoice_and_bank_statement,0.06,allowed,Normal operating utility
+BIZ008,Greenfield Childcare,EIDL,130000,needs_review,2021-09-15,9200.00,accounts_payable,Parts Supplier Co,overdue supplier account,false,invoice_and_check,0.12,allowed,Normal operating payable
+BIZ008,Greenfield Childcare,EIDL,130000,needs_review,2021-09-21,10500.00,owner_bonus,Owner Payroll,special owner bonus,true,payroll_stub,0.91,inappropriate,Bonus or distribution to owner
+BIZ008,Greenfield Childcare,EIDL,130000,needs_review,2021-09-28,4600.00,repairs,HVAC Service Co,emergency repair to existing HVAC,false,invoice_and_receipt,0.28,allowed,Repair appears tied to existing operations
+BIZ008,Greenfield Childcare,EIDL,130000,needs_review,2021-10-04,7400.00,equipment,Classroom Supply Depot,replacement classroom furniture,false,invoice_and_receipt,0.38,questionable,Equipment replacement needs program context review

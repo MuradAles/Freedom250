@@ -1,0 +1,7 @@
+business_id,business_name,program,loan_amount,case_label,transaction_date,amount,category,merchant,description,owner_related,documentation,risk_score,transaction_label,label_reason
+BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,2021-07-01,8400.00,rent,Warehouse Park LLC,warehouse lease payment,false,lease_and_bank_statement,0.08,allowed,Normal operating rent
+BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,2021-07-05,2600.00,utilities,Regional Power,business utility bill,false,invoice_and_bank_statement,0.05,allowed,Normal operating utility
+BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,2021-07-09,11200.00,inventory,Industrial Supply Co,replacement inventory for open orders,false,invoice_and_receipt,0.12,allowed,Working capital inventory expense
+BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,2021-07-16,4900.00,accounts_payable,Packaging Vendor Inc,past due packaging invoices,false,invoice_and_check,0.10,allowed,Ordinary payable tied to operations
+BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,2021-07-22,3300.00,insurance,Commercial Mutual,business liability insurance,false,invoice_and_bank_statement,0.09,allowed,Ordinary insurance cost
+BIZ002,Lone Star Machine Works,EIDL,175000,not_flagged,2021-07-29,6800.00,accounts_payable,Steel Supplier Co,past due steel supply invoice,false,invoice_and_check,0.11,allowed,Ordinary payable tied to operations

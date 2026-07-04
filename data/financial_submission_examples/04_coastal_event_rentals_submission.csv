@@ -1,0 +1,26 @@
+business_id,business_name,submission_context,period,record_type,record_date,line_item,counterparty,description,debit,credit,balance,amount,source_document,case_label,review_note
+FS004,Coastal Event Rentals,sba_working_capital_review,2025,profit_and_loss,,gross_revenue,,event rental revenue,,,,644000.00,2025_profit_loss.pdf,needs_review,Revenue declined and monthly deposits are uneven
+FS004,Coastal Event Rentals,sba_working_capital_review,2025,profit_and_loss,,cost_of_goods_sold,,cleaning repairs replacement linens,,,,231000.00,2025_profit_loss.pdf,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025,profit_and_loss,,gross_profit,,gross revenue less COGS,,,,413000.00,2025_profit_loss.pdf,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025,profit_and_loss,,payroll_expense,,crew and admin wages,,,,214000.00,2025_profit_loss.pdf,needs_review,Payroll summary supplied but tax filings missing
+FS004,Coastal Event Rentals,sba_working_capital_review,2025,profit_and_loss,,rent_expense,,warehouse lease,,,,108000.00,2025_profit_loss.pdf,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025,profit_and_loss,,net_income,,income after expenses,,,,-18400.00,2025_profit_loss.pdf,needs_review,Negative income requires repayment capacity review
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12-31,balance_sheet,,cash,,operating account,,,,22400.00,2025_balance_sheet.pdf,needs_review,Low cash relative to requested amount
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12-31,balance_sheet,,accounts_receivable,,event customer receivables,,,,79200.00,2025_balance_sheet.pdf,needs_review,AR aging has older balances
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12-31,balance_sheet,,inventory,,rental tables linens tents,,,,244000.00,2025_balance_sheet.pdf,needs_review,Inventory report not supplied
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12-31,balance_sheet,,accounts_payable,,vendor payables,,,,138800.00,2025_balance_sheet.pdf,needs_review,AP aging shows stretched vendors
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12-31,balance_sheet,,term_debt,,truck equipment and merchant cash advance,,,,286500.00,2025_balance_sheet.pdf,needs_review,High debt load
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-01,deposit,Event Customer ACH,customer deposits,,18400.00,40800.00,,dec_2025_bank_statement.pdf,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-03,owner_transfer,Owner Transfer,transfer to owner personal account,12500.00,,28300.00,,dec_2025_bank_statement.pdf,needs_review,Owner transfer needs explanation
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-06,payroll,Manual Payroll Checks,crew payroll checks,18600.00,,9700.00,,dec_2025_bank_statement.pdf,needs_review,Manual payroll lacks payroll provider report
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-09,cash_withdrawal,ATM Cash Withdrawal,cash withdrawal for event labor,4200.00,,5500.00,,dec_2025_bank_statement.pdf,needs_review,No receipts supplied for cash use
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-15,deposit,Event Customer ACH,customer deposits,,24000.00,29500.00,,dec_2025_bank_statement.pdf,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-18,loan_payment,MCA Funding Co,merchant cash advance daily settlement,9400.00,,20100.00,,dec_2025_bank_statement.pdf,needs_review,High-cost debt pressure
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,bank_statement,2025-12-22,rent,Warehouse Leasing LLC,monthly warehouse rent,9000.00,,11100.00,,dec_2025_bank_statement.pdf,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,ar_aging,2025-12-31,current,Wedding Venue Group,invoices under 30 days,,,,18200.00,ar_aging_2025_12.xlsx,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,ar_aging,2025-12-31,91_plus_days,Festival Organizer LLC,invoices over 90 days,,,,31800.00,ar_aging_2025_12.xlsx,needs_review,Old AR may not be collectible
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,ap_aging,2025-12-31,61_90_days,Tent Supplier Co,vendor invoices 61 to 90 days,,,,46600.00,ap_aging_2025_12.xlsx,needs_review,Stretched vendor payments
+FS004,Coastal Event Rentals,sba_working_capital_review,2025-12,debt_schedule,2025-12-31,merchant_cash_advance,MCA Funding Co,remaining advance balance,,,,84500.00,debt_schedule.xlsx,needs_review,Daily repayment obligation affects cash flow
+FS004,Coastal Event Rentals,sba_working_capital_review,2026,use_of_proceeds,,working_capital,,ordinary operating expenses and vendor payables,,,,85000.00,use_of_proceeds.xlsx,needs_review,
+FS004,Coastal Event Rentals,sba_working_capital_review,2026,use_of_proceeds,,debt_refinance,,pay off merchant cash advance,,,,65000.00,use_of_proceeds.xlsx,needs_review,Refinance purpose needs program and lender review
+FS004,Coastal Event Rentals,sba_working_capital_review,2026,use_of_proceeds,,equipment_purchase,,new luxury event tent package,,,,10000.00,vendor_quote_tent.pdf,needs_review,May be expansion rather than working capital
